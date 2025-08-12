@@ -236,7 +236,7 @@ body {
   border-radius: 4px;
   position: relative;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  height: 180px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -676,21 +676,21 @@ body {
 /* Responsive Career Cards */
 @media (max-width: 992px) {
   .career-image {
-    height: 160px;
+    height: 200px;
   }
 
   .career-image-container {
-    height: 160px;
+    height: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .career-image {
-    height: 150px;
+    height: 200px;
   }
 
   .career-image-container {
-    height: 150px;
+    height: 200px;
   }
 
   .career-title {
@@ -709,11 +709,11 @@ body {
 
 @media (max-width: 576px) {
   .career-image {
-    height: 140px;
+    height: 250px;
   }
 
   .career-image-container {
-    height: 140px;
+    height: 250px;
   }
 
   .career-card {
