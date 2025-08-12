@@ -220,8 +220,8 @@ body {
 .career-image {
   height: 100%;
   width: 100%;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: top;
   transition: transform 0.3s ease;
   border-radius: 8px 8px 0 0;
 }
