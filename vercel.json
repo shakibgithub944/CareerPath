@@ -1,6 +1,4 @@
 {
-  "version": 2,
-  "name": "future-career",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
