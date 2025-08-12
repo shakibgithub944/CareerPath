@@ -47,9 +47,7 @@ $(document).ready(function () {
     showLoading();
 
     // Determine which page we're on
-    const isDetailsPage = window.location.pathname.includes(
-      "career-details.html"
-    );
+    const isDetailsPage = window.location.pathname.includes("career-details");
 
     if (isDetailsPage) {
       initCareerDetailsPage();
@@ -217,7 +215,7 @@ $(document).ready(function () {
                                          ? '<span class="badge bg-primary mb-2"><i class="fas fa-star me-1"></i>Popular</span>'
                                          : ""
                                      }
-                                    <a href="career-details.html?id=${
+                                    <a href="career-details?id=${
                                       career.id
                                     }" class="btn btn-outline-primary btn-sm">
                                         <i class="fas fa-eye me-1"></i>View Details
@@ -311,7 +309,7 @@ $(document).ready(function () {
     const relatedHtml = relatedCareers
       .map(
         (career) => `
-            <a href="career-details.html?id=${career.id}" class="btn btn-outline-secondary btn-sm d-block text-start">
+            <a href="career-details?id=${career.id}" class="btn btn-outline-secondary btn-sm d-block text-start">
                 <i class="fas fa-arrow-right me-2"></i>${career.name}
             </a>
         `
