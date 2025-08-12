@@ -278,7 +278,9 @@ body {
 /* Career Detail Page */
 .career-detail-image {
   max-height: 200px;
+  max-width: 100%;
   object-fit: cover;
+  object-position: top;
   transition: transform 0.3s ease;
 }
 
