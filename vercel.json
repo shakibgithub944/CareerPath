@@ -1,28 +1,12 @@
 {
   "version": 2,
-  "name": "career-path-explorer",
-  "builds": [
+  "name": "future-career",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
     {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/career-details",
-      "dest": "/career-details.html"
-    },
-    {
-      "src": "/career-details.html",
-      "dest": "/career-details.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/career-details",
+      "destination": "/career-details.html"
     }
   ],
   "headers": [
