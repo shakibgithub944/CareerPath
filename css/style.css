@@ -709,11 +709,11 @@ body {
 
 @media (max-width: 576px) {
   .career-image {
-    height: 250px;
+    height: 220px;
   }
 
   .career-image-container {
-    height: 250px;
+    height: 220px;
   }
 
   .career-card {
