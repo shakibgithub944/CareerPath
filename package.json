@@ -1,0 +1,37 @@
+{
+  "name": "career-path-explorer",
+  "version": "1.0.0",
+  "description": "A modern web application for exploring future career opportunities with expert guidance",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "vercel",
+    "deploy:prod": "vercel --prod"
+  },
+  "keywords": [
+    "career",
+    "education",
+    "guidance",
+    "jobs",
+    "professional-development",
+    "career-exploration"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/career-path-explorer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/career-path-explorer/issues"
+  },
+  "homepage": "https://your-vercel-url.vercel.app",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

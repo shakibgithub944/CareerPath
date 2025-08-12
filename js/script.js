@@ -4,14 +4,22 @@
  */
 
 $(document).ready(function () {
-  // Configuration
-  const CONFIG = {
-    API_BASE_URL: "https://www.ehlcrm.theskyroute.com/api",
-    CAREERS_ENDPOINT: "/test/top-future-career",
-    CAREER_DETAILS_ENDPOINT: "/future-career-details",
-    CAREERS_PER_PAGE: 12, // Match API per_page
-    ANIMATION_DURATION: 300,
-  };
+  // Configuration - Use AppConfig if available, fallback to defaults
+  const CONFIG = window.AppConfig
+    ? {
+        API_BASE_URL: window.AppConfig.API.BASE_URL,
+        CAREERS_ENDPOINT: window.AppConfig.API.ENDPOINTS.CAREERS,
+        CAREER_DETAILS_ENDPOINT: window.AppConfig.API.ENDPOINTS.CAREER_DETAILS,
+        CAREERS_PER_PAGE: window.AppConfig.SETTINGS.CAREERS_PER_PAGE,
+        ANIMATION_DURATION: window.AppConfig.SETTINGS.ANIMATION_DURATION,
+      }
+    : {
+        API_BASE_URL: "https://www.ehlcrm.theskyroute.com/api",
+        CAREERS_ENDPOINT: "/test/top-future-career",
+        CAREER_DETAILS_ENDPOINT: "/future-career-details",
+        CAREERS_PER_PAGE: 12,
+        ANIMATION_DURATION: 300,
+      };
 
   // State management
   let allCareers = [];
